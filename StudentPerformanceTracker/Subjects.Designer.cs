@@ -38,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ss_studentName_lbl = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.new_subject_txt = new System.Windows.Forms.TextBox();
             this.create_sub_btn = new System.Windows.Forms.Button();
             this.delete_sub_btn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -158,13 +158,13 @@
             this.label3.Text = "Subject Name";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // new_subject_txt
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(187, 171);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(289, 22);
-            this.textBox1.TabIndex = 10;
+            this.new_subject_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_subject_txt.Location = new System.Drawing.Point(187, 171);
+            this.new_subject_txt.Name = "new_subject_txt";
+            this.new_subject_txt.Size = new System.Drawing.Size(289, 22);
+            this.new_subject_txt.TabIndex = 10;
             // 
             // create_sub_btn
             // 
@@ -176,6 +176,7 @@
             this.create_sub_btn.TabIndex = 11;
             this.create_sub_btn.Text = "Create";
             this.create_sub_btn.UseVisualStyleBackColor = false;
+            this.create_sub_btn.Click += new System.EventHandler(this.create_sub_btn_Click);
             // 
             // delete_sub_btn
             // 
@@ -187,6 +188,7 @@
             this.delete_sub_btn.TabIndex = 12;
             this.delete_sub_btn.Text = "Delete";
             this.delete_sub_btn.UseVisualStyleBackColor = false;
+            this.delete_sub_btn.Click += new System.EventHandler(this.delete_sub_btn_Click);
             // 
             // dataGridView1
             // 
@@ -207,7 +209,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.delete_sub_btn);
             this.Controls.Add(this.create_sub_btn);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.new_subject_txt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ss_studentName_lbl);
             this.Controls.Add(this.panel1);
@@ -233,7 +235,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label ss_studentName_lbl;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox new_subject_txt;
         private System.Windows.Forms.Button create_sub_btn;
         private System.Windows.Forms.Button delete_sub_btn;
         private System.Windows.Forms.DataGridView dataGridView1;
